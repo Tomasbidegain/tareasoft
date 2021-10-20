@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  min-height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(-225deg, #4B6587 0%, #A2D2FF 52%, #334257 100%);
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.container{
+  padding-bottom: 5rem;
+}
+
+h2 {
+  color: #11324D;
+  padding: 3rem 0;
+  text-align: center;
+  margin:0;
+  font-size: 35px;
+
+  text-transform: uppercase;
+
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+
+.header{
+  height: 80px;
+  background-color: #11324D;
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1{
+  text-transform: uppercase;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin: 0;
+  font-size: 45px;
+}
+
+label{
+  color: #fff;
+}
+
+input, textarea{
+  width: 100%;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 40px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+.Tarea {
+  padding: 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+  color: #000;
+  margin: 15px;
+  transition: all 300ms;
+  box-shadow: 0.2px 1px 4px #000;
+  display:flex;
+  flex-direction: column;
+}
+
+
+.Tarea p {
+  font-weight: boid;
+  margin-bottom: 0.8rem ;
+  letter-spacing: 1px;
+}
+
+.Tarea p, .Tarea span {
+  font-family: 'Mukta', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.Tarea span {
+  padding: 5px;
+  color: #333;
+}
+
+.Tarea button {
+  align-items: center;
+}
+
+.button.eliminar{
+  background-color:#11324D;
+  color: #fff;
+  margin-top: 2rem;
+  border: none;
+  transition: all 300ms;
+}
+
+.alert-error {
+  border-radius: 5px;
+  background-color:yellow;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+}
+
+.grid-tarea {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(50%, 1fr));
+}
+
+.Tarea:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 1px 7px #000;
+}
+
+
+.button.eliminar:hover {
+  background-color: #16446d;
+}
+
+
+.footer{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #000;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p{
+  margin: 0;
+  color: white;
+  letter-spacing: 2px;
 }
